@@ -36,16 +36,16 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import HijoProp from './components/HijoProp'
+import { defineAsyncComponent } from 'vue'
+// import HijoProp from './components/HijoProp'
 import HijoAtr from './components/HijoAtr'
 import HijoAtrCustom from './components/HijoAtrCustom'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
-    HijoProp, HijoAtr, HijoAtrCustom
+    HijoProp: defineAsyncComponent(() => import('./components/HijoProp.vue')),
+    HijoAtr, HijoAtrCustom
   }
 }
 </script>
