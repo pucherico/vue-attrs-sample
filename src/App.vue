@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>$attrs Sample</h1>
+    <h1>Vue sample: Using $attrs</h1>
     <p>
       Esto es un ejemplo que demuestra las posibles formas de transmitir información desde un componente padre a componentes hijos:
     </p>
